@@ -116,7 +116,11 @@ if aba == "🔧 Calculadora":
         x = np.linspace(a, b, 1000)
         y = triang.pdf(x, c, loc=a, scale=scale)
         Q_dist = triang.ppf(critical_fractile, c, loc=a, scale=scale)
-        label = "Triangular"
+        fig6, ax6 = plt.subplots()
+        ax6.plot(x, y, label="Triangular")
+        ax6.axvline(Q_dist, color='red', linestyle='--', label=f"Q* ≈ {Q_dist:.0f}")
+        ax6.legend()
+        st.pyplot(fig6)
       
         st.markdown("""
         ### 📘 Justificativa das Distribuições:
