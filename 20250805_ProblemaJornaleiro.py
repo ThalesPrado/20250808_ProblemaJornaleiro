@@ -37,7 +37,7 @@ if aba == "🔧 Calculadora":
 
     st.subheader("📈 Resultado")
     st.markdown(f"**Fractil crítico (nível de serviço ótimo):** {critical_fractile:.3f}")
-    st.markdown(f"**A quantidade ótima é tal que existe x% de chance da demanda ser menor ou igual ao que você comprou,ou aceita-se y% de chance de faltar o produto/ruptura.")
+    st.markdown(f"**A quantidade ótima é tal que existe {critical_fractile:.3f}% de chance da demanda ser menor ou igual ao que você comprou,ou aceita-se (1-{critical_fractile:.3f})% de chance de faltar o produto/ruptura.")
     st.markdown(f"**z-score correspondente:** {z_score:.3f}")
     st.markdown(f"**Posição desse fractil na distribuição normal padronizada.")
     st.markdown(f"**Quantidade ótima a comprar (Q\\*):** {Q_opt:.0f}")
