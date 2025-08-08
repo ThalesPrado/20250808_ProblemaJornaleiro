@@ -32,15 +32,6 @@ O objetivo é **calcular a quantidade ótima de produção** que maximiza o lucr
 - **Média da demanda (μ)** – estimativa média de unidades demandadas.
 - **Desvio padrão da demanda (σ)** – medida de incerteza na demanda.
 
----
-
-## 📐 Fórmulas principais
-
-O modelo usa o **fractil crítico**:
-
-\[
-F(Q^*) = \frac{p - c}{p - s}
-\]
 
 Com base nele, calcula-se:
 
