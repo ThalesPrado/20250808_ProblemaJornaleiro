@@ -79,7 +79,7 @@ if aba == "🔧 Calculadora":
 
     # Escolha de distribuição
     st.subheader("🔄 Escolher Distribuição de Demanda (Experimental)")
-    dist_choice = st.selectbox("Distribuição:", ["Normal", "Lognormal", "Uniforme,Triangular"])
+    dist_choice = st.selectbox("Distribuição:", ["Normal", "Lognormal","Triangular","Uniforme"])
 
     if dist_choice == "Lognormal":
         from scipy.stats import lognorm
